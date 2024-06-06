@@ -1,7 +1,10 @@
-# Studies About Collections In Java
+# Studies About Collections in Java
+
+This repository contains examples demonstrating the use of `Comparable` and  `Comparator` interfaces in Java for sorting collections.
 
 # Comparable:
-## Main
+The `Comparable` interface is used to define the natural ordering of objects in a class. In this example, we use `Comparable` to sort a list of `Book` objects by their name.
+## Main Class
 ````
 package collections.comparable;
 
@@ -35,7 +38,7 @@ public class Main {
 
 ````
 
-## Book
+## Book Class
 ````
 package collections.comparable;
 
@@ -77,7 +80,12 @@ public class Book implements Comparable<Book> {
 ````
 
 # Comparator:
-## Main
+
+The `Comparator` interface is used to define multiple ways of sorting objects. In this example, we use two different comparators to sort a list of `Person` objects by age and by name.
+
+
+
+## Main Class
 ````
 package collections.comparator;
 
@@ -120,7 +128,7 @@ public class Main {
 
 ````
 
-## Person
+## Person Class
 ````
 package collections.comparator;
 
@@ -180,7 +188,7 @@ public class Person {
 
 ````
 
-## AgeComparator
+## AgeComparator Class
 ````
 package collections.comparator;
 
@@ -196,7 +204,7 @@ public class AgeComparator implements Comparator<Person> {
 
 ````
 
-## NameComparator
+## NameComparator Class
 ````
 package collections.comparator;
 
