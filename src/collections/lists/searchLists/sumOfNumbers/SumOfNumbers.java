@@ -1,2 +1,4 @@
-package collections.lists.searchLists.sumOfnumbers;public class SumOfNumbers {
+package collections.lists.searchLists.sumOfNumbers;
+
+public class SumOfNumbers {
 }

@@ -1,2 +1,4 @@
-package collections.lists.sortingLists.sortingPeople;public class SortingPeople {
+package collections.lists.sortingLists.sortingPeople;
+
+public class SortingPeople {
 }
