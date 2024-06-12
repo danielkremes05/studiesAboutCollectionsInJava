@@ -1,222 +1,86 @@
-# Studies About Collections in Java
+# Fixing Knowledge
 
-This repository contains examples demonstrating the use of `Comparable` and  `Comparator` interfaces in Java for sorting collections.
+## Exercises
 
-# Comparable:
-The `Comparable` interface is used to define the natural ordering of objects in a class. In this example, we use `Comparable` to sort a list of `Book` objects by their name.
-## Main Class
-````
-package collections.comparable;
+- 1 Basics operations in lists
+- 2 Search in lists
+- 3 Sorting in lists
 
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.List;
+## Basics operations in lists
 
-public class Main {
-    public static void main(String[] args) {
-        List<Book> booksStore = new ArrayList<>();
+### 1. Task List
 
-        Book book1 = new Book();
-        book1.setNameBook("Harry Potter");
-        booksStore.add(book1);
+Create a class called ``TaskList"`` that has a list of tasks as an attribute
 
-        Book book2 = new Book();
-        book2.setNameBook("Narnia");
-        booksStore.add(book2);
+Each task is represented by a class called ``Task`` which has a description attribute. Implement the following methods:
 
-        Book book3 = new Book();
-        book3.setNameBook("O homem mais rico da Babilônia");
-        booksStore.add(book3);
+- ``addTask(String description)``: Adds a new task to the list with the given description
 
-        Collections.sort(booksStore);
+- ``removeTask(String description)``: Removes a task from the list based on its description
 
-        for (Book book : booksStore) {
-            System.out.println(book.getNameBook());
-        }
-    }
-}
+- ``getTotalNumberTasks()``: Returns the total number of tasks in the list
 
-````
+- ``getTaskDescriptions()``: Returns a list containing the description of all the tasks in the list
 
-## Book Class
-````
-package collections.comparable;
+### 1. Shopping Cart
 
-public class Book implements Comparable<Book> {
+Create a class called ``"ShoppingCart"`` that represents an online shopping cart. The cart should be implemented as a list of items. Each item is represented by a class called "Item" which has attributes such as name, price and quantity
+Implement the following methods:
 
-    private String nameBook;
-    private Integer year;
+- ``addItem(String name, double price, int quantity)``: Adds an item to the cart with the specified name, price and quantity
 
-    public Integer getYear() {
-        return year;
-    }
+- ``removeItem(String name)``: Removes an item from the cart based on its name
 
-    public void setYear(Integer year) {
-        this.year = year;
-    }
+- ``calculateTotalValue()``: Calculates and returns the total value of the cart, taking into account the price and quantity of each item
 
-    public String getNameBook() {
-        return nameBook;
-    }
+- ``displayItems()``: Displays all the items present in the cart, showing their names, prices and quantities
 
-    public void setNameBook(String nameBook) {
-        this.nameBook = nameBook;
-    }
+## 2 Search in lists
 
-    @Override
-    public int compareTo(Book other) {
-        return this.nameBook.compareTo(other.nameBook);
-    }
+### Book Catalog
 
-    @Override
-    public String toString() {
-        return "Book{" +
-                "nameBook='" + nameBook + '\'' +
-                ", year=" + year +
-                '}';
-    }
-}
+Create a class called``"CatalogoLivros"`` which has a list of objects of type "Livro" as an attribute. Each book has attributes such as title, author and year of publication. Implement the following methods:
 
-````
+- ``addBook(String title, String author, int yearPublication)``: Adds a book to the catalog
 
-# Comparator:
+- ``searchByAuthor(String author)``: Searches for books by author and returns a list with the books found
 
-The `Comparator` interface is used to define multiple ways of sorting objects. In this example, we use two different comparators to sort a list of `Person` objects by age and by name.
+- ``searchByYear(int yearStart, int yearEnd)``: Searches for books published in a given range of years and returns a list with the books found
 
+- ``searchByTitle(String title)``: Searches for books by title and returns the first book found
 
+### Sum of Numbers
 
-## Main Class
-````
-package collections.comparator;
+Create a class called ``"SumNumbers"`` which has a list of integers as an attribute. Implement the following methods:
 
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.List;
+- ``addNumber(int number)``: Adds a number to the list of numbers
 
-public class Main {
-    public static void main(String[] args) {
+- ``calculateSum()``: Calculates the sum of all the numbers in the list and returns the result
 
-        List<Person> personList = new ArrayList<>();
-        Person person1 = new Person("Daniel", 24);
-        Person person2 = new Person("Renato", 25);
-        Person person3 = new Person("Jose", 25);
+- ``findLargestNumber()``: Finds the largest number in the list and returns the value
 
-        personList.add(person1);
-        personList.add(person2);
-        personList.add(person3);
+- ``findLargestNumber()``: Finds the smallest number in the list and returns the value
 
-        // Sort the list by age using AgeComparator
-        Collections.sort(personList, new AgeComparator());
+- ``displayNumbers()``: Returns a list containing all the numbers in the list
 
-        // Print the sorted list
-        for (Person person : personList) {
-            System.out.println(person);
-        }
+## 3. Sorting in lists
 
-        System.out.println("\n\n\n");
+### Sorting People
 
-        // Sort the list by age using NameComparatorr
-        Collections.sort(personList, new NameComparator());
+Create a class called ``"SortPeople"`` which has a list of objects of type ``"Person"`` as an attribute. Each person has attributes such as name, age and height. Implement the following methods:
 
-        // Print the sorted list
-        for (Person person : personList) {
-            System.out.println(person);
-        }
+- ``addPerson(String name, int age, double height)``: Adds a person to the list
 
-    }
-}
+- ``sortByAge()``: Sorts the people in the list by age using the Comparable interface
 
-````
+- ``sortByHeight()``: Sorts the people in the list by height using a custom Comparator
 
-## Person Class
-````
-package collections.comparator;
+### Sorting Numbers
 
-import java.util.Objects;
+Create a class called "OrdenacaoNumeros" which has a list of integers as an attribute. Implement the following methods:
 
-public class Person {
-    private String name;
-    private int age;
+- ``addNumber(int number)``: Adds a number to the list
 
-    public Person() {
-    }
+- ``sortAscendant()``: Sorts the numbers in the list in ascending order using the Comparable interface and the Collections class
 
-    public Person(String name, int age) {
-        this.name = name;
-        this.age = age;
-    }
-
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
-    }
-
-    public int getAge() {
-        return age;
-    }
-
-    public void setAge(int age) {
-        this.age = age;
-    }
-
-    @Override
-    public boolean equals(Object o) {
-        if (this == o) return true;
-        if (o == null || getClass() != o.getClass()) return false;
-        Person person = (Person) o;
-        return Objects.equals(name, person.name);
-    }
-
-    @Override
-    public int hashCode() {
-        return Objects.hashCode(name);
-    }
-
-    @Override
-    public String toString() {
-        return "Person{" +
-                "name='" + name + '\'' +
-                ", age=" + age +
-                '}';
-    }
-
-
-}
-
-````
-
-## AgeComparator Class
-````
-package collections.comparator;
-
-import java.util.Comparator;
-
-public class AgeComparator implements Comparator<Person> {
-
-    @Override
-    public int compare(Person p1, Person p2) {
-        return Integer.compare(p1.getAge(), p2.getAge());
-    }
-}
-
-````
-
-## NameComparator Class
-````
-package collections.comparator;
-
-import java.util.Comparator;
-
-public class NameComparator implements Comparator<Person> {
-
-    @Override
-    public int compare(Person p1, Person p2) {
-        return p1.getName().compareTo(p2.getName());
-    }
-}
-
-````
-
+- ``sortDescending()``: Sorts the numbers in the list in descending order using a Comparable and the Collections class
