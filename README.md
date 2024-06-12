@@ -37,7 +37,7 @@ Implement the following methods:
 
 ## 2 Search in lists
 
-### Book Catalog
+### 2. Book Catalog
 
 Create a class called``"CatalogoLivros"`` which has a list of objects of type "Livro" as an attribute. Each book has attributes such as title, author and year of publication. Implement the following methods:
 
@@ -49,7 +49,7 @@ Create a class called``"CatalogoLivros"`` which has a list of objects of type "L
 
 - ``searchByTitle(String title)``: Searches for books by title and returns the first book found
 
-### Sum of Numbers
+### 2. Sum of Numbers
 
 Create a class called ``"SumNumbers"`` which has a list of integers as an attribute. Implement the following methods:
 
@@ -65,7 +65,7 @@ Create a class called ``"SumNumbers"`` which has a list of integers as an attrib
 
 ## 3. Sorting in lists
 
-### Sorting People
+### 3. Sorting People
 
 Create a class called ``"SortPeople"`` which has a list of objects of type ``"Person"`` as an attribute. Each person has attributes such as name, age and height. Implement the following methods:
 
@@ -75,7 +75,7 @@ Create a class called ``"SortPeople"`` which has a list of objects of type ``"Pe
 
 - ``sortByHeight()``: Sorts the people in the list by height using a custom Comparator
 
-### Sorting Numbers
+### 3. Sorting Numbers
 
 Create a class called "OrdenacaoNumeros" which has a list of integers as an attribute. Implement the following methods:
 
