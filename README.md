@@ -2,7 +2,7 @@
 
 ## Exercises
 
-- 1 Basics operations in lists
+- 1 Basics operations in lists (DONE)
 - 2 Search in lists
 - 3 Sorting in lists
 
@@ -84,3 +84,5 @@ Create a class called "OrdenacaoNumeros" which has a list of integers as an attr
 - ``sortAscendant()``: Sorts the numbers in the list in ascending order using the Comparable interface and the Collections class
 
 - ``sortDescending()``: Sorts the numbers in the list in descending order using a Comparable and the Collections class
+
+### Last Update: 6/12/2024 4:40 PM
