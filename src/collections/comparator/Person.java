@@ -1,55 +1,29 @@
 package collections.comparator;
 
-import java.util.Objects;
-
+// Person class with name and age attributes
 public class Person {
     private String name;
     private int age;
 
-    public Person() {
-    }
-
+    // Constructor to initialize name and age
     public Person(String name, int age) {
         this.name = name;
         this.age = age;
     }
 
+    // Getter for name
     public String getName() {
         return name;
     }
 
-    public void setName(String name) {
-        this.name = name;
-    }
-
+    // Getter for age
     public int getAge() {
         return age;
     }
 
-    public void setAge(int age) {
-        this.age = age;
-    }
-
-    @Override
-    public boolean equals(Object o) {
-        if (this == o) return true;
-        if (o == null || getClass() != o.getClass()) return false;
-        Person person = (Person) o;
-        return Objects.equals(name, person.name);
-    }
-
-    @Override
-    public int hashCode() {
-        return Objects.hashCode(name);
-    }
-
+    // Override toString method to print Person objects
     @Override
     public String toString() {
-        return "Person{" +
-                "name='" + name + '\'' +
-                ", age=" + age +
-                '}';
+        return name + " - " + age;
     }
-
-
 }
