@@ -1,50 +1,37 @@
-# Operações Básicas com Set
-1. Conjunto de Convidados
-   Crie uma classe chamada "ConjuntoConvidados" que possui um conjunto de objetos do tipo "Convidado" como atributo. Cada convidado possui atributos como nome e código do convite. Implemente os seguintes métodos:
+# Basic operations with Set
 
-    adicionarConvidado(String nome, int codigoConvite): Adiciona um convidado ao conjunto.
-    removerConvidadoPorCodigoConvite(int codigoConvite): Remove um convidado do conjunto com base no código do convite.
-    contarConvidados(): Conta o número total de convidados no Set.
-    exibirConvidados(): Exibe todos os convidados do conjunto.
-2. Conjunto de Palavras Únicas
-   Crie uma classe chamada "ConjuntoPalavrasUnicas" que possui um conjunto de palavras únicas como atributo. Implemente os seguintes métodos:
+## 1. set of guests
 
-adicionarPalavra(String palavra): Adiciona uma palavra ao conjunto.
-removerPalavra(String palavra): Remove uma palavra do conjunto.
-verificarPalavra(String palavra): Verifica se uma palavra está presente no conjunto.
-exibirPalavrasUnicas(): Exibe todas as palavras únicas do conjunto.
-Pesquisa em Set
-1. Agenda de Contatos
-   Crie uma classe chamada "AgendaContatos" que possui um conjunto de objetos do tipo "Contato" como atributo. Cada contato possui atributos como nome e número de telefone. Implemente os seguintes métodos:
+- Create a class called "``GuestSet`` that has a set of objects of type "Guest" as an attribute. Each guest has attributes such as name and invitation code. Implement the following methods:
 
-adicionarContato(String nome, int numero): Adiciona um contato à agenda.
-exibirContatos(): Exibe todos os contatos da agenda.
-pesquisarPorNome(String nome): Pesquisa contatos pelo nome e retorna uma conjunto com os contatos encontrados.
-atualizarNumeroContato(String nome, int novoNumero): Atualiza o número de telefone de um contato específico.
-2. Lista de Tarefas
-   Crie uma classe chamada "ListaTarefas" que possui um conjunto de objetos do tipo "Tarefa" como atributo. Cada tarefa possui um atributo de descrição e um atributo booleano para indicar se a tarefa foi concluída ou não. Implemente os seguintes métodos:
+  - ``addGuest(String name, int InvitationCode)``: Adds a guest to the set.
 
-adicionarTarefa(String descricao): Adiciona uma nova tarefa ao Set.
-removerTarefa(String descricao): Remove uma tarefa do Set de acordo com a descrição, se estiver presente.
-exibirTarefas(): Exibe todas as tarefas da lista de tarefas.
-contarTarefas(): Conta o número total de tarefas na lista de tarefas.
-obterTarefasConcluidas(): Retorna um Set com as tarefas concluídas.
-obterTarefasPendentes(): Retorna um Set com as tarefas pendentes.
-marcarTarefaConcluida(String descricao): Marca uma tarefa como concluída de acordo com a descrição.
-marcarTarefaPendente(String descricao): Marca uma tarefa como pendente de acordo com a descrição.
-limparListaTarefas(): Remove todas as tarefas da lista de tarefas.
-Ordenação em Set
-1. Cadastro de Produtos
-   Crie uma classe chamada "CadastroProdutos" que possui um conjunto de objetos do tipo "Produto" como atributo. Cada produto possui atributos como nome, cod, preço e quantidade. Implemente os seguintes métodos:
+  - ``RemoveGuestByInvitationCode(int InvitationCode)``: Removes a guest from the set based on the invitation code.
 
-adicionarProduto(long cod, String nome, double preco, int quantidade): Adiciona um produto ao cadastro.
-exibirProdutosPorNome(): Exibe todos os produtos do cadastro em ordem alfabética pelo nome.
-exibirProdutosPorPreco(): Exibe todos os produtos do cadastro em ordem crescente de preço.
-2. Lista de Alunos
-   Crie uma classe chamada "GerenciadorAlunos" que irá lidar com uma lista de alunos. Cada aluno terá atributos como nome, matrícula e nota. Implementaremos os seguintes métodos:
+  - ``countGuests()``: Counts the total number of guests in the set.
 
-adicionarAluno(String nome, Long matricula, double media): Adiciona um aluno ao conjunto.
-removerAluno(long matricula): Remove um aluno ao conjunto a partir da matricula, se estiver presente.
-exibirAlunosPorNome(): Exibe todos os alunos do conjunto em ordem alfabética pelo nome.
-exibirAlunosPorNota(): Exibe todos os alunos do conjunto em ordem crescente de nota.
-exibirAlunos(): Exibe todos os alunos do conjunto.
+  - ``displayGuests()``: Displays all the guests in the set.
+
+## 2. set of unique words
+
+- Create a class called "``SetUniqueWords`` that has a set of unique words as an attribute. Implement the following methods:
+
+  - ``addWord(String word)``: Adds a word to the set.
+
+  - ``removeWord(String word)``: Removes a word from the set.
+
+  - ``checkWord(String word)``: Checks if a word is present in the set.
+
+  - ``displayUniqueWords()``: Displays all the unique words in the set.
+
+# Search in Set
+
+## 1. address book
+
+- Create a class called ``AgendaContacts"`` which has a set of objects of type "Contact" as an attribute. Each contact has attributes such as name and phone number. Implement the following methods:
+
+  - ``addContact(String name, int number)``: Adds a contact to the address book
+
+  - ``displayContact
+
+Translated with DeepL.com (free version)
