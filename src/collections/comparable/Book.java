@@ -1,36 +1,21 @@
 package collections.comparable;
 
 public class Book implements Comparable<Book> {
-
     private String nameBook;
-    private Integer year;
 
-    public Integer getYear() {
-        return year;
-    }
-
-    public void setYear(Integer year) {
-        this.year = year;
-    }
-
+    // Getter for nameBook
     public String getNameBook() {
         return nameBook;
     }
 
+    // Setter for nameBook
     public void setNameBook(String nameBook) {
         this.nameBook = nameBook;
     }
 
+    // Override the compareTo method to define the natural ordering of Book objects
     @Override
     public int compareTo(Book other) {
         return this.nameBook.compareTo(other.nameBook);
-    }
-
-    @Override
-    public String toString() {
-        return "Book{" +
-                "nameBook='" + nameBook + '\'' +
-                ", year=" + year +
-                '}';
     }
 }
