@@ -32,6 +32,56 @@
 
   - ``addContact(String name, int number)``: Adds a contact to the address book
 
-  - ``displayContact
+  - ``displayContacts()``: Displays all the contacts in the address book.
 
-Translated with DeepL.com (free version)
+  - ``searchByName(String name)``: - Searches for contacts by name and returns a set with the contacts found.
+
+  - ``updateContactNumber(String name, int newNumber)``: Updates the phone number of a specific contact.
+
+## 2. list of tasks
+
+- Create a class called "``TaskList`` that has a set of objects of type "Task" as an attribute. Each task has a description attribute and a boolean attribute to indicate whether the task has been completed or not. Implement the following methods:
+
+  - ``addTask(String description)``: Adds a new task to the Set.
+
+  - ``removeTask(String description)``: Removes a task from the Set according to its description, if present.
+
+  - ``displayTasks()``: Displays all the tasks in the task list.
+
+  - ``countTasks()``: Counts the total number of tasks in the task list.
+
+  - ``getCompletedTasks()``: Returns a set with the completed tasks.
+
+  - ``getPendingTasks()``: Returns a set of pending tasks.
+
+  - ``markTaskCompleted(String description)``: Marks a task as completed according to its description.
+
+  - ``markTaskPending(String description)``: Marks a task as pending according to the description.
+
+  - clearTaskList(): Removes all tasks from the task list.
+
+# Sorting in Set
+
+## 1. Product Registration
+
+- Create a class called "``ProductCatalog`` that has a set of objects of type "``Product`` as an attribute. Each product has attributes such as ``name``, ``code``, ``price`` and ``quantity``. Implement the following methods:
+
+  - ``addProduct(long cod, String name, double price, int quantity)``: Adds a product to the register.
+
+  - ``displayProductsByName()``: Displays all the products in the register in alphabetical order by name.
+
+  - ``displayProductsByPrice()``: Displays all the products in the register in ascending order of price.
+
+## 2. list of students
+
+- Create a class called ``StudentManager`` that will handle a list of students. Each student will have attributes such as ``name``, ``enrollment`` and ``note``. We will implement the following methods:
+
+  - ``addStudent(String name, Long enrollment, double average)``: Adds a student to the set.
+
+  - ``removeStudent(long enrollment)``: Removes a student from the set starting from the enrollment, if present.
+
+  - ``displayStudentsByName()``: Displays all the students in the set in alphabetical order by name.
+
+  - ``displayStudentsByGrade()``: Displays all the students in the set in ascending grade order.
+
+  - ``displayStudents()``: Displays all the students in the set.
