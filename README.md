@@ -1,4 +1,4 @@
-# Basic operations with Set
+# Basic operations with Set DONE
 
 ## 1. set of guests: STATUS OK 
 

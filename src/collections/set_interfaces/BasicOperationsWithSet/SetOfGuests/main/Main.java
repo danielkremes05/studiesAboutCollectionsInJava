@@ -7,33 +7,46 @@ import collections.set_interfaces.BasicOperationsWithSet.SetOfGuests.guests.Gues
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * Main class to demonstrate usage of Guest, GuestBuilder, and GuestSet classes.
+ */
 public class Main {
-    public static void main (String[] args) {
 
+    public static void main(String[] args) {
+
+        // Create a list to store GuestSet instances
         List<GuestSet> guestStore = new ArrayList<>();
 
+        // Create a Guest using GuestBuilder
         Guest guest = new GuestBuilder()
                 .nameGuest("Daniel")
                 .invitedCode(400)
                 .creationGuest();
 
+        // Create a new GuestSet instance
         GuestSet guestSet = new GuestSet();
 
+        // Add the guest to the guestSet
         guestSet.addGuest(guest.getNameGuest(), guest.getInvitedCode());
 
+        // Add guestSet to guestStore
         guestStore.add(guestSet);
 
-        // System.out.println(guestStore);
-
+        // Display guests in guestSet
         guestSet.displayGuests();
 
-        // System.out.println(guestSet);
+        // Uncomment the following lines to test additional functionality:
+
+        // Count guests in guestSet
         // guestSet.countGuests();
 
+        // Remove guest by invitation code (e.g., 400)
         // guestSet.removeGuestByInvitationCode(400);
 
-        // System.out.println(guestSet);
-        // guestSet.countGuests();
+        // Display guests in guestSet after removal
+        // guestSet.displayGuests();
 
+        // Count guests in guestSet after removal
+        // guestSet.countGuests();
     }
 }
