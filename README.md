@@ -1,88 +1,87 @@
-# Fixing Knowledge
+# Basic operations with Set
 
-## Exercises
+## 1. set of guests: STATUS OK 
 
-- 1 Basics operations in lists (DONE)
-- 2 Search in lists
-- 3 Sorting in lists
+- Create a class called "``GuestSet`` that has a set of objects of type "Guest" as an attribute. Each guest has attributes such as name and invitation code. Implement the following methods:
 
-## Basics operations in lists
+  - ``addGuest(String name, int InvitationCode)``: Adds a guest to the set.
 
-### 1. Task List
+  - ``RemoveGuestByInvitationCode(int InvitationCode)``: Removes a guest from the set based on the invitation code.
 
-Create a class called ``TaskList"`` that has a list of tasks as an attribute
+  - ``countGuests()``: Counts the total number of guests in the set.
 
-Each task is represented by a class called ``Task`` which has a description attribute. Implement the following methods:
+  - ``displayGuests()``: Displays all the guests in the set.
 
-- ``addTask(String description)``: Adds a new task to the list with the given description
+## 2. set of unique words OK
 
-- ``removeTask(String description)``: Removes a task from the list based on its description
+- Create a class called "``SetUniqueWords`` that has a set of unique words as an attribute. Implement the following methods:
 
-- ``getTotalNumberTasks()``: Returns the total number of tasks in the list
+  - ``addWord(String word)``: Adds a word to the set.
 
-- ``getTaskDescriptions()``: Returns a list containing the description of all the tasks in the list
+  - ``removeWord(String word)``: Removes a word from the set.
 
-### 1. Shopping Cart
+  - ``checkWord(String word)``: Checks if a word is present in the set.
 
-Create a class called ``"ShoppingCart"`` that represents an online shopping cart. The cart should be implemented as a list of items. Each item is represented by a class called "Item" which has attributes such as name, price and quantity
-Implement the following methods:
+  - ``displayUniqueWords()``: Displays all the unique words in the set.
 
-- ``addItem(String name, double price, int quantity)``: Adds an item to the cart with the specified name, price and quantity
+# Search in Set
 
-- ``removeItem(String name)``: Removes an item from the cart based on its name
+## 1. address book
 
-- ``calculateTotalValue()``: Calculates and returns the total value of the cart, taking into account the price and quantity of each item
+- Create a class called ``AgendaContacts"`` which has a set of objects of type "Contact" as an attribute. Each contact has attributes such as name and phone number. Implement the following methods:
 
-- ``displayItems()``: Displays all the items present in the cart, showing their names, prices and quantities
+  - ``addContact(String name, int number)``: Adds a contact to the address book
 
-## 2 Search in lists
+  - ``displayContacts()``: Displays all the contacts in the address book.
 
-### 2. Book Catalog
+  - ``searchByName(String name)``: - Searches for contacts by name and returns a set with the contacts found.
 
-Create a class called``"CatalogoLivros"`` which has a list of objects of type "Livro" as an attribute. Each book has attributes such as title, author and year of publication. Implement the following methods:
+  - ``updateContactNumber(String name, int newNumber)``: Updates the phone number of a specific contact.
 
-- ``addBook(String title, String author, int yearPublication)``: Adds a book to the catalog
+## 2. list of tasks
 
-- ``searchByAuthor(String author)``: Searches for books by author and returns a list with the books found
+- Create a class called "``TaskList`` that has a set of objects of type "Task" as an attribute. Each task has a description attribute and a boolean attribute to indicate whether the task has been completed or not. Implement the following methods:
 
-- ``searchByYear(int yearStart, int yearEnd)``: Searches for books published in a given range of years and returns a list with the books found
+  - ``addTask(String description)``: Adds a new task to the Set.
 
-- ``searchByTitle(String title)``: Searches for books by title and returns the first book found
+  - ``removeTask(String description)``: Removes a task from the Set according to its description, if present.
 
-### 2. Sum of Numbers
+  - ``displayTasks()``: Displays all the tasks in the task list.
 
-Create a class called ``"SumNumbers"`` which has a list of integers as an attribute. Implement the following methods:
+  - ``countTasks()``: Counts the total number of tasks in the task list.
 
-- ``addNumber(int number)``: Adds a number to the list of numbers
+  - ``getCompletedTasks()``: Returns a set with the completed tasks.
 
-- ``calculateSum()``: Calculates the sum of all the numbers in the list and returns the result
+  - ``getPendingTasks()``: Returns a set of pending tasks.
 
-- ``findLargestNumber()``: Finds the largest number in the list and returns the value
+  - ``markTaskCompleted(String description)``: Marks a task as completed according to its description.
 
-- ``findLargestNumber()``: Finds the smallest number in the list and returns the value
+  - ``markTaskPending(String description)``: Marks a task as pending according to the description.
 
-- ``displayNumbers()``: Returns a list containing all the numbers in the list
+  - clearTaskList(): Removes all tasks from the task list.
 
-## 3. Sorting in lists
+# Sorting in Set
 
-### 3. Sorting People
+## 1. Product Registration
 
-Create a class called ``"SortPeople"`` which has a list of objects of type ``"Person"`` as an attribute. Each person has attributes such as name, age and height. Implement the following methods:
+- Create a class called "``ProductCatalog`` that has a set of objects of type "``Product`` as an attribute. Each product has attributes such as ``name``, ``code``, ``price`` and ``quantity``. Implement the following methods:
 
-- ``addPerson(String name, int age, double height)``: Adds a person to the list
+  - ``addProduct(long cod, String name, double price, int quantity)``: Adds a product to the register.
 
-- ``sortByAge()``: Sorts the people in the list by age using the Comparable interface
+  - ``displayProductsByName()``: Displays all the products in the register in alphabetical order by name.
 
-- ``sortByHeight()``: Sorts the people in the list by height using a custom Comparator
+  - ``displayProductsByPrice()``: Displays all the products in the register in ascending order of price.
 
-### 3. Sorting Numbers
+## 2. list of students
 
-Create a class called "OrdenacaoNumeros" which has a list of integers as an attribute. Implement the following methods:
+- Create a class called ``StudentManager`` that will handle a list of students. Each student will have attributes such as ``name``, ``enrollment`` and ``note``. We will implement the following methods:
 
-- ``addNumber(int number)``: Adds a number to the list
+  - ``addStudent(String name, Long enrollment, double average)``: Adds a student to the set.
 
-- ``sortAscendant()``: Sorts the numbers in the list in ascending order using the Comparable interface and the Collections class
+  - ``removeStudent(long enrollment)``: Removes a student from the set starting from the enrollment, if present.
 
-- ``sortDescending()``: Sorts the numbers in the list in descending order using a Comparable and the Collections class
+  - ``displayStudentsByName()``: Displays all the students in the set in alphabetical order by name.
 
-### Last Update: 6/12/2024 4:40 PM
+  - ``displayStudentsByGrade()``: Displays all the students in the set in ascending grade order.
+
+  - ``displayStudents()``: Displays all the students in the set.
