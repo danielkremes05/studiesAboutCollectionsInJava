@@ -26,7 +26,7 @@
 
 # Search in Set
 
-## 1. address book
+## 1. address book DONE
 
 - Create a class called ``AgendaContacts"`` which has a set of objects of type "Contact" as an attribute. Each contact has attributes such as name and phone number. Implement the following methods:
 
