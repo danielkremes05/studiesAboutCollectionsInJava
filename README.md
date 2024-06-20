@@ -12,7 +12,7 @@
 
   - ``displayGuests()``: Displays all the guests in the set.
 
-## 2. set of unique words OK
+## 2. set of unique words DONE
 
 - Create a class called "``SetUniqueWords`` that has a set of unique words as an attribute. Implement the following methods:
 
