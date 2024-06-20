@@ -1,6 +1,6 @@
-# Basic operations with Set DONE
+# Basic operations with Set
 
-## 1. set of guests: STATUS OK 
+## 1. set of guests DONE
 
 - Create a class called "``GuestSet`` that has a set of objects of type "Guest" as an attribute. Each guest has attributes such as name and invitation code. Implement the following methods:
 
