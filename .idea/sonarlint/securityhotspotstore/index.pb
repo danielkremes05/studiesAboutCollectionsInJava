@@ -181,3 +181,5 @@ Lsrc/collections/set_interfaces/SortingInSet/productRegistration/Product.java,f
 Msrc/collections/set_interfaces/SortingInSet/productRegistration/Products.java,0\b\0bd65b0178e077ecdce0f6033510fec2309d1db7
 „
 Tsrc/collections/set_interfaces/SortingInSet/productRegistration/ProductsBuilder.java,3\5\3512b4468a3b187c2a966078676178a3c400bd7a
+e
+5src/collections/maps/addressBook/ContactCalendar.java,8\a\8a26714b9c04733da19fb5793f46a7736661346c
