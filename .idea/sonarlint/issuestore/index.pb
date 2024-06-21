@@ -125,14 +125,6 @@ w
 G.idea/sonarlint/issuestore/4/4/4425f9be7f1b873a6ffb0c18e546676bc12106b3,d\c\dc831e5acc6b4d408717b909ff596c4b7894ab3a
 Å
 Q.idea/sonarlint/securityhotspotstore/6/4/64af13fa65c990cbabf0ff410880860ef846afc9,d\e\defb8b9c6ad8cfa917fbd769b67e8bf11e51f572
-|
-Lsrc/collections/set_interfaces/BasicOperationsWithSet/SetOfGuests/Guest.java,b\c\bcb424c78954e69e6ab156e5767fdb36df53086d
-É
-Ssrc/collections/set_interfaces/BasicOperationsWithSet/SetOfGuests/GuestBuilder.java,7\d\7defce5fbd7b25bab8a6643dc193631815ca5177
-{
-Ksrc/collections/set_interfaces/BasicOperationsWithSet/SetOfGuests/Main.java,1\5\154e5e5bfe43eed9ca0dfbf74574d090722cd3d1
-
-Osrc/collections/set_interfaces/BasicOperationsWithSet/SetOfGuests/GuestSet.java,1\8\189caa48c1dfb5af85f518c97e33c41f1df6242f
 Ä
 Psrc/collections/set_interfaces/BasicOperationsWithSet/SetOfGuests/main/Main.java,2\a\2aa234208777b6664a3ad9dc5876fb0588a7f871
 Ü
@@ -149,3 +141,11 @@ Psrc/collections/set_interfaces/BasicOperationsWithSet/UniqueWords/main/Main.jav
 asrc/collections/set_interfaces/BasicOperationsWithSet/UniqueWords/uniqueWords/SetUniqueWords.java,5\f\5f27077380e898f940d17780109c3a6f75011ea5
 ï
 esrc/collections/set_interfaces/BasicOperationsWithSet/UniqueWords/uniqueWords/UniqueWordsBuilder.java,6\d\6d4266b223148b42efd4992c449ae4a77992e5a2
+É
+Ssrc/collections/set_interfaces/SortingInSet/productRegistration/ProductCatalog.java,9\9\99de4f74f618f63843038016ab5bb349ee2548c7
+j
+:src/collections/set_interfaces/SortingInSet/Main/Main.java,c\1\c1dde8e9b22ec9082dc8d312577ef63cada78495
+}
+Msrc/collections/set_interfaces/SortingInSet/productRegistration/Products.java,0\b\0bd65b0178e077ecdce0f6033510fec2309d1db7
+Ñ
+Tsrc/collections/set_interfaces/SortingInSet/productRegistration/ProductsBuilder.java,3\5\3512b4468a3b187c2a966078676178a3c400bd7a
