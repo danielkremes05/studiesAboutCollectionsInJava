@@ -1,87 +1,84 @@
-# Basic operations with Set
+Exercises:
 
-## 1. set of guests DONE
+1. Basic operations with Map
+2. Searching in Map
+3. Sorting in Maps
 
-- Create a class called "``GuestSet`` that has a set of objects of type "Guest" as an attribute. Each guest has attributes such as name and invitation code. Implement the following methods:
+## Basic Map Operations
 
-    - ``addGuest(String name, int InvitationCode)``: Adds a guest to the set.
+### 1. Address Book
 
-    - ``RemoveGuestByInvitationCode(int InvitationCode)``: Removes a guest from the set based on the invitation code.
+<p>
+Create a class called "AgendaContatos" that uses a Map to store the contacts. Each contact has a name as a key and a phone number as a value. Implement the following methods:
 
-    - ``countGuests()``: Counts the total number of guests in the set.
+- `addContact(String name, Integer phone)`: Adds a contact to the address book, associating the contact's name with the corresponding phone number.
+- `removeContact(String name)`: Removes a contact from the address book, given the contact's name.
+- `displayContacts()`: Displays all the contacts in the address book, showing the name and phone number of each contact.
+- `searchByName(String name)`: Searches for a contact by name and returns the corresponding phone number.
+</p>
 
-    - ``displayGuests()``: Displays all the guests in the set.
+### 2 Dictionary
 
-## 2. set of unique words DONE
+<p>
+Create a class called "Dictionary" that uses a Map to store words and their respective definitions. Implement the following methods:
 
-- Create a class called "``SetUniqueWords`` that has a set of unique words as an attribute. Implement the following methods:
+- `addWord(String word, String definition)`: Adds a word and its definition to the dictionary, associating the word with its corresponding definition.
+- `removeWord(String word)`: Removes a word from the dictionary, given the term to be removed.
+- `displayWords()`: Displays all the words and their definitions in the dictionary, showing each word followed by its definition.
+- `searchForWord(String word)`: Searches for a word in the dictionary and returns its corresponding definition.
+</p>
 
-    - ``addWord(String word)``: Adds a word to the set.
+---
 
-    - ``removeWord(String word)``: Removes a word from the set.
+## Search in Map
 
-    - ``checkWord(String word)``: Checks if a word is present in the set.
+### 1. stock of products with price
 
-    - ``displayUniqueWords()``: Displays all the unique words in the set.
+<p>
+Create a class called "StockProducts" that uses a Map to store the products, their quantities in stock and their respective prices. Each product has a code as its key and a Product object as its value, containing its name, quantity and price. Implement the following methods:
 
-# Search in Set
+- `addProduct(long cod, String name, int quantity, double price)`: Adds a product to stock, along with the quantity available and the price.
+- `displayProducts()`: Displays all products, their stock quantities and prices.
+- `calculateTotalStockValue()`: Calculates and returns the total stock value, taking into account the quantity and price of each product.
+- `getMostExpensiveProduct()`: Returns the most expensive product in stock, i.e. the one with the highest price.
+- `obterProductMostExpensive()`: Returns the cheapest product in stock, i.e. the one with the lowest price.
+- `obtainMostQuantityProductTotalValueInStock()`: Returns the product with the largest quantity in stock, considering the total value of each product (quantity * price).
+</p>
 
-## 1. address book DONE
+### 2. word count
 
-- Create a class called ``AgendaContacts"`` which has a set of objects of type "Contact" as an attribute. Each contact has attributes such as name and phone number. Implement the following methods:
+<p>
+Create a class called "WordCount" that uses a Map to store the words and the number of times each word appears in a text. Implement the following methods:
 
-    - ``addContact(String name, int number)``: Adds a contact to the address book
+- `addWord(String word, Integer count)`: Adds a word to the count.
+- `removeWord(String word)`: Removes a word from the count, if present.
+- `displayWordCount()`: Displays all words and their respective counts.
+- `findMostFrequentWord()`: Finds the most frequent word in the text and returns the word and its count.
+</p>
 
-    - ``displayContacts()``: Displays all the contacts in the address book.
+---
 
-    - ``searchByName(String name)``: - Searches for contacts by name and returns a set with the contacts found.
+## Sorting in Maps
 
-    - ``updateContactNumber(String name, int newNumber)``: Updates the phone number of a specific contact.
+### 1. Calendar of Events
 
-## 2. list of tasks
+<p>
+Create a class called "AgendaEvents" that uses a `Map` to store the dates and their respective Events. Each event is represented by an object of the "Event" class, which has attributes such as the name of the event and the name of the attraction. Implement the following methods:
 
-- Create a class called "``TaskList`` that has a set of objects of type "Task" as an attribute. Each task has a description attribute and a boolean attribute to indicate whether the task has been completed or not. Implement the following methods:
+- `addEvent(LocalDate date, String name, String attraction)`: Adds an event to the agenda.
+- `displayAgenda()`: Displays the events agenda in ascending date order.
+- `getNextEvent()`: Returns the next event that will take place.
+</p>
 
-    - ``addTask(String description)``: Adds a new task to the Set.
+### 2. online bookshop
 
-    - ``removeTask(String description)``: Removes a task from the Set according to its description, if present.
+<p>
+Create a class called "BookstoreOnline" that represents an online bookstore. This class uses a Map to store the books available in the bookstore, using the link of the work in the Amazon Marketplace as the key and an object of the "Book" class as the value. The "Book" class has attributes such as title, author and price. Through the "LivrariaOnline" class, implement the following methods:
 
-    - ``displayTasks()``: Displays all the tasks in the task list.
-
-    - ``countTasks()``: Counts the total number of tasks in the task list.
-
-    - ``getCompletedTasks()``: Returns a set with the completed tasks.
-
-    - ``getPendingTasks()``: Returns a set of pending tasks.
-
-    - ``markTaskCompleted(String description)``: Marks a task as completed according to its description.
-
-    - ``markTaskPending(String description)``: Marks a task as pending according to the description.
-
-    - clearTaskList(): Removes all tasks from the task list.
-
-# Sorting in Set
-
-## 1. Product Registration
-
-- Create a class called "``ProductCatalog`` that has a set of objects of type "``Product`` as an attribute. Each product has attributes such as ``name``, ``code``, ``price`` and ``quantity``. Implement the following methods:
-
-    - ``addProduct(long cod, String name, double price, int quantity)``: Adds a product to the register.
-
-    - ``displayProductsByName()``: Displays all the products in the register in alphabetical order by name.
-
-    - ``displayProductsByPrice()``: Displays all the products in the register in ascending order of price.
-
-## 2. list of students
-
-- Create a class called ``StudentManager`` that will handle a list of students. Each student will have attributes such as ``name``, ``enrollment`` and ``note``. We will implement the following methods:
-
-    - ``addStudent(String name, Long enrollment, double average)``: Adds a student to the set.
-
-    - ``removeStudent(long enrollment)``: Removes a student from the set starting from the enrollment, if present.
-
-    - ``displayStudentsByName()``: Displays all the students in the set in alphabetical order by name.
-
-    - ``displayStudentsByGrade()``: Displays all the students in the set in ascending grade order.
-
-    - ``displayStudents()``: Displays all the students in the set.
+- `addBook(String link, String title, String author, private double price)`: Adds a book to the bookstore, using the ISBN as the key in Map.
+- `removeBook(String title)`: Removes a book from the bookstore, given the title of the book.
+- `displayBooksOrderedByPrice()`: Displays the books in the bookstore in ascending order of price.
+- `searchBooksByAuthor(String author)`: Returns a list of all the books written by a given author.
+- `getMostExpensiveBook()`: Returns the most expensive book available in the bookstore.
+- `displayBestBook()`: Returns the cheapest book available in the bookstore.
+</p>
