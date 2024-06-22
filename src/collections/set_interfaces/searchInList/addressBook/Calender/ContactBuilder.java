@@ -1,4 +1,4 @@
-package collections.set_interfaces.searchInList.addressBookOne.Calender;
+package collections.set_interfaces.searchInList.addressBook.Calender;
 
 public class ContactBuilder {
     private String nameContact;
@@ -17,5 +17,4 @@ public class ContactBuilder {
     public Contact creationContact () {
         return new Contact(nameContact, phoneNumber);
     }
-
 }

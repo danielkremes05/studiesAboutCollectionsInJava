@@ -1,5 +1,7 @@
 package collections.set_interfaces.SortingInSet.productRegistration;
 
+import java.util.Objects;
+
 public class Products {
     private String name;
     private double price;
@@ -49,7 +51,7 @@ public class Products {
         if (Double.compare(products.price, price) != 0) return false;
         if (code != products.code) return false;
         if (quantity != products.quantity) return false;
-        return name != null ? name.equals(products.name) : products.name == null;
+        return Objects.equals(name, products.name);
     }
 
     @Override

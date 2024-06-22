@@ -1,4 +1,4 @@
-package collections.set_interfaces.searchInList.addressBookOne.Calender;
+package collections.set_interfaces.searchInList.addressBook.Calender;
 
 import java.util.Objects;
 
@@ -24,12 +24,12 @@ public class Contact {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
         Contact contact = (Contact) o;
-        return phoneNumber == contact.phoneNumber && Objects.equals(nameContact, contact.nameContact);
+        return Objects.equals(phoneNumber, contact.phoneNumber) &&
+                Objects.equals(nameContact, contact.nameContact);
     }
 
     @Override
     public int hashCode () {
         return Objects.hash(nameContact, phoneNumber);
     }
-
 }

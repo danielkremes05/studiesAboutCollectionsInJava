@@ -6,10 +6,10 @@ Exercises:
 
 ## Basic Map Operations
 
-### 1. Address Book
+### 1. Address Book STATUS OK
 
 <p>
-Create a class called "AgendaContatos" that uses a Map to store the contacts. Each contact has a name as a key and a phone number as a value. Implement the following methods:
+Create a class called "AgendaContacts" that uses a Map to store the contacts. Each contact has a name as a key and a phone number as a value. Implement the following methods:
 
 - `addContact(String name, Integer phone)`: Adds a contact to the address book, associating the contact's name with the corresponding phone number.
 - `removeContact(String name)`: Removes a contact from the address book, given the contact's name.
@@ -35,7 +35,10 @@ Create a class called "Dictionary" that uses a Map to store words and their resp
 ### 1. stock of products with price
 
 <p>
-Create a class called "StockProducts" that uses a Map to store the products, their quantities in stock and their respective prices. Each product has a code as its key and a Product object as its value, containing its name, quantity and price. Implement the following methods:
+Create a class called "StockProducts" that uses a Map to store the products, 
+their quantities in stock and their respective prices. 
+Each product has a code as its key and a Product object as its value, 
+containing its name, quantity and price. Implement the following methods:
 
 - `addProduct(long cod, String name, int quantity, double price)`: Adds a product to stock, along with the quantity available and the price.
 - `displayProducts()`: Displays all products, their stock quantities and prices.
@@ -60,10 +63,10 @@ Create a class called "WordCount" that uses a Map to store the words and the num
 
 ## Sorting in Maps
 
-### 1. Calendar of Events
+### 1. Calendar of Events STATUS OK
 
 <p>
-Create a class called "AgendaEvents" that uses a `Map` to store the dates and their respective Events. Each event is represented by an object of the "Event" class, which has attributes such as the name of the event and the name of the attraction. Implement the following methods:
+Create a class called "Calendar Events" that uses a `Map` to store the dates and their respective Events. Each event is represented by an object of the "Event" class, which has attributes such as the name of the event and the name of the attraction. Implement the following methods:
 
 - `addEvent(LocalDate date, String name, String attraction)`: Adds an event to the agenda.
 - `displayAgenda()`: Displays the events agenda in ascending date order.

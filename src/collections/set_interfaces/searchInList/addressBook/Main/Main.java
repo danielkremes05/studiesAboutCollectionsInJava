@@ -1,12 +1,11 @@
-package collections.set_interfaces.searchInList.addressBookOne.Calender.Main;
+package collections.set_interfaces.searchInList.addressBook.Main;
 
-import collections.set_interfaces.searchInList.addressBookOne.Calender.CalendarContacts;
-import collections.set_interfaces.searchInList.addressBookOne.Calender.Contact;
-import collections.set_interfaces.searchInList.addressBookOne.Calender.ContactBuilder;
+import collections.set_interfaces.searchInList.addressBook.Calender.CalendarContacts;
+import collections.set_interfaces.searchInList.addressBook.Calender.Contact;
+import collections.set_interfaces.searchInList.addressBook.Calender.ContactBuilder;
 
 public class Main {
     public static void main (String[] args) {
-
         Contact contact = new ContactBuilder()
                 .nameContact("Daniel")
                 .phoneNumber("4299716528")

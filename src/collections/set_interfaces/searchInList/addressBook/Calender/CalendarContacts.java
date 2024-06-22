@@ -1,23 +1,25 @@
-package collections.set_interfaces.searchInList.addressBookOne.Calender;
+package collections.set_interfaces.searchInList.addressBook.Calender;
 
 import java.util.HashSet;
+import java.util.Iterator;
 import java.util.Set;
 
 public class CalendarContacts {
 
-    /* Create a class called ``AgendaContacts"`` which has a set of objects of type "Contact" as an attribute.
-    Each contact has attributes such as name and phone number. Implement the following methods:
-     */
-
     private final Set<Contact> contacts = new HashSet<>();
 
     public void searchByName (String name) {
+        boolean found = false;
         for (Contact value : contacts) {
             if (value.getNameContact().equalsIgnoreCase(name)) {
-                System.out.println("Your are " + name + " your was founded in list");
-            } else {
-                System.out.println("Sorry you are " + name + ", your name not founded in list");
+                found = true;
+                break;
             }
+        }
+        if (found) {
+            System.out.println("You are " + name + ". Your name was found in the list.");
+        } else {
+            System.out.println("Sorry, you are " + name + ". Your name was not found in the list.");
         }
     }
 
@@ -27,17 +29,26 @@ public class CalendarContacts {
 
     public void displayContacts () {
         for (Contact value : contacts) {
-            System.out.println("Name: " + value.getNameContact() + ", Phone Number " + value.getPhoneNumber());
+            System.out.println("Name: " + value.getNameContact() + ", Phone Number: " + value.getPhoneNumber());
         }
     }
 
     public void updateContactNumber (String name, String newNumber) {
-        for (Contact value : contacts) {
+        Iterator<Contact> iterator = contacts.iterator();
+        boolean updated = false;
+        while (iterator.hasNext()) {
+            Contact value = iterator.next();
             if (value.getNameContact().equalsIgnoreCase(name)) {
-                contacts.remove(value);
+                iterator.remove();
                 contacts.add(new Contact(name, newNumber));
+                updated = true;
+                break;
             }
         }
+        if (updated) {
+            System.out.println("Contact number for " + name + " updated to " + newNumber);
+        } else {
+            System.out.println("Contact with name " + name + " not found.");
+        }
     }
-
 }
